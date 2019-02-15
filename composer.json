@@ -12,7 +12,8 @@
     ],
     "require": {
         "php": "^7.1.3",
-        "siemendev/forskel": "master"
+        "siemendev/forskel": "*",
+        "symfony/asset": "^4.2"
     },
     "config": {
         "platform": {
