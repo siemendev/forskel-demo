@@ -1,5 +1,9 @@
-<div class="container">
-    <div class="row">
-
+{% if model.teasers is not empty %}
+    <div class="teaserlist container" data-columns="{{ model.columns }}">
+        <div class="row">
+            {% for teaser in model.teasers %}
+                {{ forskel_render(teaser) }}
+            {% endfor %}
+        </div>
     </div>
-</div>
+{% endif %}

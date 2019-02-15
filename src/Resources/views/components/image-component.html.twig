@@ -1,1 +1,3 @@
-<img src="{{ model.source }}">
+{% if model.source is not empty %}
+    <img src="{{ model.source }}"{% if model.alt is not empty %} alt="{{ model.alt }}"{% endif %}>
+{% endif %}

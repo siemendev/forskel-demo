@@ -1,0 +1,71 @@
+/**
+ * This is a crude css file that will be loaded directly into the page.
+ * When developing your own bundle, use an asset management like Webpack Encore.
+ */
+
+/* HEROSPACE */
+.herospace {
+    position: relative;
+    background: #f8f9fa;
+    padding: 9rem 6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.herospace img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.herospace .text {
+    display: block;
+    position: relative;
+    text-shadow: 0 0 5px white;
+}
+.herospace .text h1 {
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+/* TEASERS */
+.teaser {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 1rem;
+}
+.teaser .teaser--inner {
+    background-color: #eee;
+    padding: 1rem;
+}
+.teaser a {
+    width: 100%;
+}
+.teaserlist[data-columns='1'] .teaser {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.teaserlist[data-columns='2'] .teaser {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.teaserlist[data-columns='3'] .teaser {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.teaserlist[data-columns='4'] .teaser {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.teaserlist[data-columns='5'] .teaser {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}

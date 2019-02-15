@@ -1,11 +1,13 @@
-<div class="col-md-4">
-    {% if model.headline is not empty %}
-        <h2>{{ model.headline }}</h2>
-    {% endif %}
-    {% if model.text is not empty %}
-        {{ model.text|raw }}
-    {% endif %}
-    {% if model.link is not empty %}
-        <p><a class="btn btn-primary" href="{{ model.link }}" role="button">View details »</a></p>
-    {% endif %}
+<div class="teaser">
+    <div class="teaser--inner">
+        {% if model.headline is not empty %}
+            <h2>{{ model.headline }}</h2>
+        {% endif %}
+        {% if model.text is not empty %}
+            {{ model.text|raw }}
+        {% endif %}
+        {% if model.link is not empty %}
+            <a class="btn btn-primary" href="{{ model.link }}" role="button">Learn more about that</a>
+        {% endif %}
+    </div>
 </div>
