@@ -28,10 +28,5 @@
         "psr-4": {
             "siemendev\\MyFrontendBundle\\": "src/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "siemendev\\MyFrontendBundle\\Tests\\": "tests/"
-        }
     }
 }
