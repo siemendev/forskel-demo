@@ -1,0 +1,12 @@
+<html>
+<body>
+    <p>This is a content page.</p>
+    {% if model.headline is not empty %}
+        <h1>{{ model.headline }}</h1>
+    {% endif %}
+
+    {% for content in model.contents %}
+        {{ forskel_render(content) }}
+    {% endfor %}
+</body>
+</html>

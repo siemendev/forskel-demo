@@ -1,0 +1,11 @@
+<div class="herospace">
+    {% if model.image is not empty %}
+        {{ forskel_render(model.image) }}
+    {% endif %}
+    {% if model.headline is not empty %}
+        <h2>{{ model.headline }}</h2>
+    {% endif %}
+    {% if model.text is not empty %}
+        {{ model.text|raw }}
+    {% endif %}
+</div>
